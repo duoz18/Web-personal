@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UTS PEMOGRAMAN</title>
+    <body background="Foto & video/gambar1.webp"></body>
+    ​<h1 style="text-align:center;">PENDAFTARAN</h1>
+    <p style="text-align:center;"><I>Mari Berlangganan dengan kami!</I></p> 
+​   </head>
+
+        <p>
+            <a href="uts1.html" style="color:rgb(249, 249, 249)" style="text-align:center;" >Home</a>
+            <a href="jenis2.html" style="color:rgb(243, 248, 243)" style="text-align:center;">Jenis-Jenis</a>
+            <a href="history.html" style="color:rgb(249, 247, 244)" style="text-align:center;">History</a>
+            <a href="Pendaftaran.html" style="color:rgb(249, 247, 244)" style="text-align:center;">Penadftaran</a>
+         </p>
+        
+         
+            
+         
+         <style>
+            
+            table { 
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px; ;
+                width: 50%;
+                margin: 0px;
+            
+            }
+            table, th, td {
+                
+                border: 1px solid rgb(0, 4, 8);
+                padding: 1px;
+            }
+            th, td {
+                text-align: left;
+            }
+            input[type="text"], input[type="password"],
+             input[type="email"], textarea, select {
+                width: 100%;
+                padding: 1px;
+            }
+            input[type="submit"], input[type="reset"] {
+                width: 100px;
+                padding: 1px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <form action="submit_form.php" method="post">
+            <table>
+                <tr>
+                    <td>User Name:</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td>Re-type Password:</td>
+                    <td><input type="password" name="retype_password" required></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td>Nama:</td>
+                    <td><input type="text" name="nama" required></td>
+                </tr>
+                <tr>
+                   
+                    <td>Alamat:</td>
+                    <td><textarea name="alamat" rows="3" cols="20" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Kota Asal:</td>
+                    <td>
+                        <select name="kota_asal">
+                            <option value="jakarta">Jakarta</option>
+                            <option value="bandung">Bandung</option>
+                            <option value="surabaya">Surabaya</option>
+                            <option value="yogyakarta">Yogyakarta</option>
+                            <option value="tangerang">Tangerang</option>
+                            <option value="bali">Bali</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" value="pria" required> Pria
+                        <input type="radio" name="jenis_kelamin" value="wanita" required> Wanita
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+        
+    </body>
+
+</html>
